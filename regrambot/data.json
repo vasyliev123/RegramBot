@@ -1,0 +1,22 @@
+{
+  "admins": [
+    {
+      "id": 123456789,
+      "username": "username"
+    }
+  ],
+  "channels": [
+    {
+      "id": -1001846421327,
+      "name": "Channel 1",
+      "caption": "\u2764\ufe0f\u200d\ud83d\udd25 Example. Subscribe \u2764\ufe0f\u200d\ud83d\udd25",
+      "link": "example.com",
+      "subredditsToScrape": [
+    
+      ],
+      "importedPosts": [
+       
+      ]
+    }
+  ]
+}
