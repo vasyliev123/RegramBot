@@ -1,7 +1,7 @@
 {
   "admins": [
     {
-      "id": 123456789,
+      "id": 1234567890,
       "username": "username"
     }
   ],
@@ -12,10 +12,11 @@
       "caption": "\u2764\ufe0f\u200d\ud83d\udd25 Example. Subscribe \u2764\ufe0f\u200d\ud83d\udd25",
       "link": "example.com",
       "subredditsToScrape": [
-    
+        "example"
+      
       ],
       "importedPosts": [
-       
+        
       ]
     }
   ]

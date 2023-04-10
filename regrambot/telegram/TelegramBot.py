@@ -3,20 +3,20 @@ from regrambot.config import TELEGRAM_BOT_TOKEN
 from regrambot.reddit.RedditAPI import RedditAPI
 from regrambot.telegram.handlers.Handlers import Handlers
 from regrambot.data.DataHandler import DataHandler
-
+from regrambot.utils import Utils
 
 class TelegramBot:
     def __init__(self):
         # initialize the bot's components and attributes
-        print("TelegramBot.__init__()")
+
         self.app = None
         self.handlers = None
         self.data_handler = DataHandler()
         self.reddit = RedditAPI()
-
+        self.logger = Utils.get_logger(__name__)
         # initialize the bot's Telegram application
         self._init()
-
+        self.logger.info("Telegram bot initialized")
     def _init(self):
         # build the Telegram application and add the bot's handlers to it
         self.app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
